@@ -3,16 +3,103 @@
 
 	<head>
 		<title>User: MushyClouds</title>	
+
+		<!--start of styles-->
+		<style>
+		body{
+			background-color:PapayaWhip;
+		}
+
+/* start of site layout in containers */
+
+/* defining stuff */
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main directory"
+    "footer footer";
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  background-color: PapayaWhip;
+  padding: 10px;
+}
+.container div {
+  background-color: White;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+/* the actual elements like the boxes whatchamacallit */
+.container div.header {
+  grid-area: header;
+  text-align: center;
+}
+.container div.main {
+  grid-area: main;
+}
+.container div.directory {
+  grid-area: directory;
+}
+.container div.footer {
+  grid-area: footer;
+  text-align: center;  
+}
+/* end of site layout in containers */
+		</style>
+		<!--end of styles-->
+
+		<!--start of javascript-->
+		<script src="validate.js"></script>
+		<!--end of javascript-->
 	</head>  
-
 	<body>
-		<h1>Ace Efrem - WDMM Website</h1>
+
+<!-- entire site being held in ts here -->
+<div class="container">
+
+<!-- start of top section -->
+  <div class="header">
+  <h1>Ace Efrem - WDMM Site</h1>
+ 	<ul>
+ 		<a href="#home">Home</a>
+		<a href="#toolbox">Toolbox</a>
+ 		<a href="#pastassignments">Past Assignments</a>
+		<a href="#discoveries">Discoveries</a>
+	</ul>
+  </div>
+<!-- end of top section -->
+
+<!-- start of left side -->
+  <div class="main">
+  <h2>Current Assignment</h2>
+
+                <div>Hello World!</div>
+                <img width="115" height="160" src="https://static.wikia.nocookie.net/theunitedorganizationtoonsheroes/images/7/7e/Perry_the_platypus.png/revision/latest?cb=20130423191122">
+                <p>Platypus</p>
 
 
-		<div>Hello World!</div>
 
-		<p>Platypus</p>
-	</body
+  </div>
+<!-- end of left side -->
 
+<!-- start of right side -->
+  <div class="directory">
+  <h2>Resources</h2>
+
+  
+  </div>
+<!-- end of right side -->
+
+
+<!-- start of bottom section -->
+  <div class="footer">
+  <h4>Site Created by: Ace Efrem</h4>
+  
+  </div>
+<!-- end of bottom section -->
+
+</div>
 <!-- no no touch lower lines -->
+	</body>
 </html>
