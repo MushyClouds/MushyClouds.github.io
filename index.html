@@ -1,105 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<title>User: MushyClouds</title>	
+<head>
+    <title>User: MushyClouds</title>
 
-		<!--start of styles-->
-		<style>
-		body{
-			background-color:PapayaWhip;
-		}
-
-/* start of site layout in containers */
-
-/* defining stuff */
-.container {
-  display: grid;
-  grid-template-areas:
-    "header header"
-    "main directory"
-    "footer footer";
-  grid-template-columns: 2fr 1fr;
-  gap: 10px;
-  background-color: PapayaWhip;
-  padding: 10px;
-}
-.container div {
-  background-color: White;
-  padding: 10px;
-  border-radius: 15px;
-}
-
-/* the actual elements like the boxes whatchamacallit */
-.container div.header {
-  grid-area: header;
-  text-align: center;
-}
-.container div.main {
-  grid-area: main;
-}
-.container div.directory {
-  grid-area: directory;
-}
-.container div.footer {
-  grid-area: footer;
-  text-align: center;  
-}
-/* end of site layout in containers */
-		</style>
-		<!--end of styles-->
-
-		<!--start of javascript-->
-		<script src="validate.js"></script>
-		<!--end of javascript-->
-	</head>  
-	<body>
-
-<!-- entire site being held in ts here -->
-<div class="container">
-
-<!-- start of top section -->
-  <div class="header">
-  <h1>Ace Efrem - WDMM Site</h1>
- 	<ul>
- 		<a href="#home">Home</a>
-		<a href="#toolbox">Toolbox</a>
- 		<a href="#pastassignments">Past Assignments</a>
-		<a href="#discoveries">Discoveries</a>
-	</ul>
-  </div>
-<!-- end of top section -->
-
-<!-- start of left side -->
-  <div class="main">
-  <h2>Current Assignment</h2>
-
-                <div>Hello World!</div>
-                <img width="115" height="160" src="https://static.wikia.nocookie.net/theunitedorganizationtoonsheroes/images/7/7e/Perry_the_platypus.png/revision/latest?cb=20130423191122">
-                <p>Platypus</p>
+    <!--start of styles-->
+    <style>
+        body {
+            background-color: SandyBrown;
+        }
 
 
+        /* ---------------------- CONTAINER LAYOUT ----------------------*/
+        /* defining layout (the grid) */
+        .container{
+            display: grid;
+            grid-template-areas:
+                "header bscorner"
+                "main directory"
+                "footer footer";
+            grid-template-columns: 2fr 1fr;
+            gap: 10px;
+            background-color: SandyBrown;
+            padding: 10px;
+        }
 
-  </div>
-<!-- end of left side -->
+        /* what a container is supposed to be like */
+        .container div {
+            background-color: White;
+            padding: 10px;
+            border: 5px solid PapayaWhip;
+            border-radius: 15px;
+        }
 
-<!-- start of right side -->
-  <div class="directory">
-  <h2>Resources</h2>
+        /* Each container in the layout */
+        .container div.header {
+            grid-area: header;
+            text-align: center;
+            background-color: White;
+        }
 
-  
-  </div>
-<!-- end of right side -->
+        .container div.bscorner {
+            grid-area: bscorner;
+            text-align: right;
+        }
+
+        .container div.main {
+            grid-area: main;
+        }
+
+        .container div.directory {
+            grid-area: directory;
+        }
+
+        .container div.footer {
+            grid-area: footer;
+            text-align: center;
+        }
 
 
-<!-- start of bottom section -->
-  <div class="footer">
-  <h4>Site Created by: Ace Efrem</h4>
-  
-  </div>
-<!-- end of bottom section -->
+        /*  --------------------- NAV BAR SECTION  --------------------- */
+        /* the bar itself */
+        #navbar {
+            overflow: hidden;
+            /* hides anything that slips outside the bar */
+            background-color: SandyBrown;
+            border: 5px solid PapayaWhip;
+            border-radius: 15px;
+        }
 
-</div>
-<!-- no no touch lower lines -->
-	</body>
+        /* all <a> nesting inside the bar */
+        #navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            background-color: SandyBrown;
+            text-align: center;
+            padding: 14px 16px;
+            /* adds space for the buttons (first is top bottom second is left right) */
+            text-decoration: none; /* berid of ugly ass underline */
+        }
+
+        /* ------------------- DROPDOWN SECTION ---------------------- */
+
+        /* defines the dropdown */
+        .dropdown {
+            float: left; /* keeps dropdown button with other buttons*/
+            overflow: hidden; /* hides anything that slips outside dropdown*/
+        }
+
+        /* the main big button */
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none; /*gets rid of border because that was there for some reason*/
+            color: white;
+            padding: 14px 16px; /* adds space for the buttons (first is top bottom second is left right) */
+            background-color: SandyBrown; /*takes background color from thingy before it*/
+            font-family: inherit; /*takes font from thingy before it*/
+        }
+
+
+        /* color change on hover of the nav bar buttons*/
+        #navbar a:hover,
+        .dropdown:hover,
+        .dropbtn:hover {
+            background-color: Orange;
+        }
+
+
+        /* -------------- ON THE INSIDE OF DROPDOWN --------------*/
+
+        /* the big container that holds all the stuff on the inside */
+        .dropdown-content {
+            display: none;
+            /* hide by default*/
+            position: absolute;
+            /* makes dropdown appear without pushing stuff*/
+            background-color: PapayaWhip;
+            z-index: 1;
+            /*make sure it stays on top */
+        }
+
+
+        /* Styles the links inside the dropdown */
+        .dropdown-content a {
+            float: none;
+            /* makes dropdown go DOWN not left-right */
+            color: black;
+            /* font colour, not background colour */
+            padding: 10px 15px;
+            /* adds space for the buttons (first is top bottom second is left right) */
+            text-decoration: none;
+            /* begone ugly ass underline */
+            display: block;
+            /* each link got a chunk of its own */
+            text-align: center;
+        }
+
+
+        /* dropdown link background on hover */
+        .dropdown-content a:hover {
+            background-color: Orange;
+        }
+
+
+        /* unhides dropdown on hober*/
+        .dropdown:hover .dropdown-content {
+            display: block;
+            /* Changes the dropdown from hidden to visible */
+        }
+    </style>
+    <!--end of styles-->
+
+    <!--start of javascript-->
+    <script src="validate.js"></script>
+    <!--end of javascript-->
+</head>
+
+
+<!-- separation of head and body -->
+
+
+<body>
+    <!-- entire site being held in ts here -->
+    <div class="container">
+
+        <!-- start of top section -->
+        <div class="header">
+            <h1>Ace Efrem - WDMM Site</h1>
+            
+            <!-- NAVIGATION BAR SECTION-->
+            <div id="navbar">
+                <a href="#home">Home</a>
+                <!-- call upon container for dropdown -->
+                <div class="dropdown">
+                    <!-- call upon button for dropdown -->
+                    <button class="dropbtn">Dropdown</button>
+                    <div class="dropdown-content"> <!-- call upon dropdown stuff -->
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <!-- END OF STUFF IN DROPDOWN -->
+                </div>
+                <!-- END OF DROPDOWN -->
+                <a href="#pastassignments">Past Assignments</a>
+                <a href="#discoveries">Discoveries</a>
+            </div>
+            <!-- END OF NAV BAR SECTION -->
+        </div>
+        
+        <!-- corner to put random crap in for fun -->
+        <div class="bscorner">
+            <img width="135" height="135" alt="NEOVOMITGORE profile picture on bandcamp" src="https://f4.bcbits.com/img/0047403917_21.jpg">
+            <p>check out this persons' music on bandcamp: NEOVOMITGORE</p>
+	</div>
+        <!-- end of top section -->
+
+        <!-- start of left side -->
+        <div class="main">
+            <h2>Current Assignment</h2>
+
+            <a href="https://zombo.com/">Check out this cool site!</a>
+
+            <p>Platypus</p>
+
+
+
+        </div>
+        <!-- end of left side -->
+
+        <!-- start of right side -->
+        <div class="directory">
+            <h2>Resources</h2>
+
+
+        </div>
+        <!-- end of right side -->
+
+
+        <!-- start of bottom section -->
+        <div class="footer">
+            <h3>Site Created by: Ace Efrem</h3>
+
+        </div>
+        <!-- end of bottom section -->
+
+    </div>
+    
+
+    <!-- no no touch lower lines -->
+</body>
+
 </html>
