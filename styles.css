@@ -1,5 +1,5 @@
         body {
-            background-color: SandyBrown;
+		background-color: white;
         }
 
 
@@ -12,16 +12,17 @@
                 "main directory"
                 "footer footer";
             grid-template-columns: 2fr 1fr;
-            gap: 10px;
-            background-color: SandyBrown;
-            padding: 10px;
+            gap: 40px;
+            background-color: Transparent;
+            padding: 30px;
+	    overflow: hidden;
         }
 
         /* what a container is supposed to be like */
         .container div {
-            background-color: White;
+            background-color: MintCream;
             padding: 10px;
-            border: 5px solid PapayaWhip;
+            border: 10px solid Lime;
             border-radius: 15px;
         }
 
@@ -29,7 +30,7 @@
         .container div.header {
             grid-area: header;
             text-align: center;
-            background-color: White;
+            background-color: MintCream;
         }
 
         .container div.bscorner {
