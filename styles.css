@@ -20,35 +20,47 @@
 
         /* what a container is supposed to be like */
         .container div {
-            background-color: MintCream;
             padding: 10px;
-            border: 10px solid Lime;
             border-radius: 15px;
+            border: 10px;
         }
 
         /* Each container in the layout */
         .container div.header {
             grid-area: header;
             text-align: center;
-            background-color: MintCream;
+            background-color: LightSeaGreen;
+	    border: solid LightSeaGreen;
+	    color: White;
         }
 
         .container div.bscorner {
             grid-area: bscorner;
             text-align: right;
+            background-color: LightGreen;
+	    border: solid LightGreen;
+            color: DarkSlateGrey;
         }
 
         .container div.main {
             grid-area: main;
+            background-color: Honeydew;
+            border: solid Honeydew;
+	    color: DarkSlateGrey;
         }
 
         .container div.directory {
             grid-area: directory;
+	    background-color: DarkSlateBlue;
+	    border: solid DarkSlateBlue;
         }
 
         .container div.footer {
             grid-area: footer;
             text-align: center;
+	    background-color: MediumAquamarine;
+	    border: solid MediumAquamarine;
+	    color: DarkSlateGrey;
         }
 
 
@@ -57,8 +69,8 @@
         #navbar {
             overflow: hidden;
             /* hides anything that slips outside the bar */
-            background-color: SandyBrown;
-            border: 5px solid PapayaWhip;
+            background-color: DarkSlateBlue;
+            border: 5px solid DarkSlateBlue;
             border-radius: 15px;
         }
 
@@ -66,14 +78,15 @@
         #navbar a {
             float: left;
             font-size: 16px;
-            color: white;
-            background-color: SandyBrown;
+            color: DarkSlateGrey;
+            background-color: LightGreen;
             text-align: center;
             padding: 14px 16px;
             /* adds space for the buttons (first is top bottom second is left right) */
             text-decoration: none;
             /* berid of ugly ass underline */
             border-radius: 15px;
+	    margin: 7px; /* omfg they're too close together!! */
 
         }
 
@@ -86,7 +99,7 @@
             overflow: hidden;
             /* hides anything that slips outside dropdown*/
             border: none !important;
-            background-color: SandyBrown !important;
+            background-color: LightGreen !important;
             /* important sets more priority */
             padding: 0px !important;
         }
@@ -96,10 +109,10 @@
             font-size: 16px;
             border: none;
             /*gets rid of border because that was there for some reason*/
-            color: white;
+            color: DarkSlateGrey;
             padding: 14px 16px;
             /* adds space for the buttons (first is top bottom second is left right) */
-            background-color: SandyBrown;
+            background-color: LightGreen;
             /*takes background color from thingy before it*/
             font-family: inherit;
             /*takes font from thingy before it*/
@@ -110,7 +123,8 @@
         #navbar a:hover,
         .dropdown:hover,
         .dropbtn:hover {
-            background-color: Orange;
+            background-color: Honeydew;
+	    transform: scale(1.1);
         }
 
 
@@ -127,7 +141,7 @@
             border: none !important;
             padding: 0px !important;
             /* important sets more priority */
-            background-color: SandyBrown !important;
+            background-color: LightGreen !important;
 
         }
 
@@ -159,3 +173,38 @@
             display: block;
             /* Changes the dropdown from hidden to visible */
         }
+
+
+        /* --------------------- DIRECTORY SIDE PANEL STUFF --------------------- */
+        /* homework */
+        .directory-table{
+            border-spacing: 20px;
+            /*space between cells*/
+        }
+        
+        .directory-table th,
+        .directory-table td {
+            border-radius: 15px;
+            overflow: hidden;
+            /* hide everythin outside hte boxes */
+            margin: 20px;
+            text-align: center;
+            font-size: 20px;
+            border: 5px solid LightGreen;
+            background-color: LightGreen;
+            color: DarkSlateGrey;
+
+        }
+        .directory-table td {
+            border-spacing: 15px;
+            color: DarkSlateGrey;
+            text-decoration: none !important; 
+            /*no ugly ass link underline*/
+        }
+        
+        .directory-table td:hover{
+            background-color: MediumSpringGreen;
+            border-color: MediumSpringGreen;
+            transform: scale(1.1);
+        }
+        

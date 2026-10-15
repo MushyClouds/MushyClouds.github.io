@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>dis da title</title>
+    <script src="../../validate.js"></script>
+    <style>
+	body{
+	    background-color: Sienna;
+	}
+        /* ---------------------- CONTAINER LAYOUT ----------------------*/
+        /* defining layout (the grid) */
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "main directory"
+                "footer footer";
+            grid-template-columns: 2fr 1fr;
+            gap: 10px;
+            background-color: Transparent;
+            padding: 5px;
+            overflow: hidden;
+        }
+
+        /* what a container is supposed to be like */
+        .container div {
+            padding: 5px;
+            border: 10px;
+        }
+
+        /* Each container in the layout */
+        .container div.header {
+            grid-area: header;
+            text-align: center;
+            background-color: DarkGoldenRod;
+            color: White;
+        }
+
+        .container div.main {
+            grid-area: main;
+            background-color: Honeydew;
+            color: Olive;
+        }
+
+        .container div.directory {
+            grid-area: directory;
+            background-color: Olive;
+        }
+
+        .container div.footer {
+            grid-area: footer;
+            text-align: center;
+            background-color: Brown;
+        }
+    </style>
+</head>
+
+<!-- ============ SEVER THE HEAD AND BODY RIGHT HERE ================= -->
+
+
+<body>
+    <!-- entire site being held in ts here -->
+    <div class="container">
+
+        <!-- start of top section -->
+        <div class="header">
+            <h1>the big ass title in the middle mayb?</h1>
+
+        </div>
+        <!-- end of top section -->
+
+
+        <!-- start of left side -->
+        <div class="main">
+            <h2>the big main shi idk</h2>
+
+        </div>
+        <!-- end of left side -->
+
+
+        <!-- start of right side -->
+        <div class="directory">
+            <h2>Resources n other junk</h2>
+
+        </div>
+        <!-- end of right side -->
+
+
+        <!-- start of bottom section -->
+        <div class="footer">
+            <h3>footer stuff</h3>
+
+        </div>
+        <!-- end of bottom section -->
+
+    </div>
+</body>
