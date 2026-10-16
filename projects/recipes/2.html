@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+ <head>
+    <title>dis da title</title>
+    <script src="../../validate.js"></script>
+    <style>
+        body{
+            background-color: Sienna;
+        }
+        /* ---------------------- CONTAINER LAYOUT ----------------------*/
+        /* defining layout (the grid) */
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header"
+                "main"
+                "footer";
+            gap: 10px;
+            background-color: Transparent;
+            padding: 5px;
+        }
+
+        /* what a container is supposed to be like */
+        .container div {
+            padding: 5px;
+            border: 10px;
+        }
+
+        /* Each container in the layout */
+        .container div.header {
+            grid-area: header;
+            text-align: center;
+            background-color: DarkGoldenRod;
+            color: White;
+        }
+
+        .container div.main {
+            grid-area: main;
+            background-color: Honeydew;
+            color: Olive;
+        }
+
+        .container div.footer {
+            grid-area: footer;
+            text-align: center;
+            background-color: Brown;
+        }
+        
+    </style>
+</head>
+
+<!-- ============ SEVER THE HEAD AND BODY RIGHT HERE ================= -->
+
+
+<body>
+    <!-- entire site being held in ts here -->
+    <div class="container">
+
+        <!-- start of top section -->
+        <div class="header">
+            <h1>Name of Second Recipe</h1>
+            <p> insert image taken by self</p>
+
+        </div>
+        <!-- end of mid section -->
+
+        <!-- start of left side -->
+        <div class="main">
+            
+            <!-- top section of recipe page -->
+            <h2>About Dish</h2>
+            <p>short description of the recipe</p>
+            <blockquote>
+                "heres a quote from a family member" -name
+            </blockquote>
+            
+            <!-- recipe ingredients -->
+            <h2>Recipe</h2>
+            <p>Prep time:   Servings:</p>
+
+                <table>
+                    <tr> <!-- row 1 -->
+                        <th colspan="2">Ingredients</th>
+                    </tr>
+                    <tr> <!-- row 2 -->
+                        <th>Item</th>
+                        <th>Qnt</th>
+                    </tr>
+                    <tr> <!-- row 3 -->
+                        <td>idk</td>
+                        <td>#</td>
+                    </tr>
+                    <tr> <!-- row 4 -->
+                        <td>idk</td>
+                        <td>#</td>
+                    </tr>
+                    <tr> <!-- row 5 -->
+                        <td>idk</td>
+                        <td>#</td>
+                    </tr>
+                    <tr> <!-- row 6 -->
+                        <td>idk</td>
+                        <td>#</td>
+                    </tr>
+                    <tr> <!-- row 7 -->
+                        <td>idk</td>
+                        <td>#</td>
+                    </tr>
+                    <tr> <!-- row 8 -->
+                        <td>idk</td>
+                        <td>#</td>
+                    </tr>
+                </table>
+            
+            <!-- instructions for the recipe -->    
+            <h3> Directions</h3>
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+                
+                <p> afternote</p>
+            
+            <h3>Additional Advice</h3>
+            
+            <h2>Tips</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+            <h2>Substitutions</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            
+            </div>
+        <!-- end of mid section -->
+
+        <!-- start of bottom section -->
+        <div class="footer">
+            <h3> <a href="index.html">Return to Home</a></h3>
+
+        </div>
+        <!-- end of bottom section -->
+
+    </div>
+</body>
+
+</html>
+
