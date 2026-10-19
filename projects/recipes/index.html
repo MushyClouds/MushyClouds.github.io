@@ -8,6 +8,9 @@
 	body{
 	    background-color: Sienna;
 	}
+	img{
+	    border-radius: 50px;
+	}
         /* ---------------------- CONTAINER LAYOUT ----------------------*/
         /* defining layout (the grid) */
         .container {
@@ -46,7 +49,13 @@
         .container div.directory {
             grid-area: directory;
             background-color: Olive;
+	    text-align: right;
         }
+	.container div.directory h3,
+	.container div.directory p {
+	    text-align: center;
+	
+	}
 
         .container div.footer {
             grid-area: footer;
@@ -85,6 +94,21 @@
         <!-- start of right side -->
         <div class="directory">
             <h2>Gallery</h2>
+	<!-- first image icon -->
+	<a href="1.html"><h3>Roasted Broccoli Recipe</h3></a>
+	<a href="https://www.flickr.com/photos/laurelfan/">
+	<img width="300px" height="300px" src="https://live.staticflickr.com/1090/1208881804_a9c35eed9d_b.jpg" alt="picture of roasted broccoli by Laurel F on flickr.com"> 
+	</a>
+	<p> Image created by laurelfan on <a href="https://www.flickr.com/photos/laurelfan/">flickr.com</a></p>
+
+	<!-- second image icon -->
+	<a href="1.html"><h3>Potato Pancakes Recipe</h3></a>
+	<a href="https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B8%D1%81%D1%82%D1%83%D0%B2%D0%B0%D1%87:Kagor">
+	<img width="300px" height="300px" src="https://upload.wikimedia.org/wikipedia/commons/1/14/Ukrainian_potato_pancakes.jpg" alt="picture of potato pancakes by Kagor at Ukrainian Wikipedia"> 
+	</a>
+	<p> Image created by Kagor at <a href="https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B8%D1%81%D1%82%D1%83%D0%B2%D0%B0%D1%87:Kagor">Ukrainian Wikipedia</a></p>
+
+
 
         </div>
         <!-- end of right side -->
