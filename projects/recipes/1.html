@@ -11,6 +11,10 @@
 	.recipe-border{
 	border: 2px Solid Olive;
 	}
+	img{
+	border-radius: 50px;
+	margin-left: 80px;
+	}
         /* ---------------------- CONTAINER LAYOUT ----------------------*/
         /* defining layout (the grid) */
         .container {
@@ -33,11 +37,13 @@
         /* Each container in the layout */
         .container div.header {
             grid-area: header;
-            text-align: center;
+            text-align: left;
             background-color: DarkGoldenRod;
             color: White;
         }
-
+	.container div.header p{
+	    text-align: right;
+	}
         .container div.main {
             grid-area: main;
             background-color: Ivory;
@@ -62,8 +68,21 @@
 
         <!-- start of top section -->
         <div class="header">
+	<table>
+<tr>
+<td>
             <h1>Easy & Simplr Roasted Broccoli</h1>
-            <p> insert image taken by self</p>
+</td>
+<td>
+	<a href="https://www.flickr.com/photos/laurelfan/">
+	<img width="250" height="250" src="https://live.staticflickr.com/1090/1208881804_a9c35eed9d_b.jpg" alt="picture of roasted broccoli by Laurel F on flickr.com"> 
+	</a>
+	<p> Image created by laurelfan on <a href="https://www.flickr.com/photos/laurelfan/">flickr.com</a></p>
+</td>
+</tr>
+</table>
+
+
 
         </div>
         <!-- end of mid section -->

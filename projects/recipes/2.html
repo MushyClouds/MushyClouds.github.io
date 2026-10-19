@@ -11,6 +11,11 @@
 	.recipe-border{
 	border: 2px Solid Olive;
 	}
+	img{
+	border-radius: 50px;
+	margin-left: 80px;
+	}
+
         /* ---------------------- CONTAINER LAYOUT ----------------------*/
         /* defining layout (the grid) */
         .container {
@@ -37,6 +42,9 @@
             background-color: DarkGoldenRod;
             color: White;
         }
+	.container div.header p{
+	    text-align: right;
+	}
 
         .container div.main {
             grid-area: main;
@@ -62,8 +70,21 @@
 
         <!-- start of top section -->
         <div class="header">
+<table>
+    <tr>
+        <td>
             <h1>Comforting & Savory Cheesy Potato Pancakes</h1>
-            <p> insert image taken by self</p>
+        </td>
+        <td>
+            <a href="https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B8%D1%81%D1%82%D1%83%D0%B2%D0%B0%D1%87:Kagor">
+                <img width="250" height="250" src="https://upload.wikimedia.org/wikipedia/commons/1/14/Ukrainian_potato_pancakes.jpg" alt="picture of potato pancakes by Kagor at Ukrainian Wikipedia">
+            </a>
+            <p> Image created by Kagor at <a href="https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B8%D1%81%D1%82%D1%83%D0%B2%D0%B0%D1%87:Kagor">Ukrainian Wikipedia</a></p>
+
+        </td>
+    </tr>
+</table>
+
 
         </div>
         <!-- end of mid section -->
