@@ -8,6 +8,9 @@
         body{
             background-color: Sienna;
         }
+	.recipe-border{
+	border: 2px Solid Olive;
+	}
         /* ---------------------- CONTAINER LAYOUT ----------------------*/
         /* defining layout (the grid) */
         .container {
@@ -37,7 +40,7 @@
 
         .container div.main {
             grid-area: main;
-            background-color: Honeydew;
+            background-color: Ivory;
             color: Olive;
         }
 
@@ -77,12 +80,10 @@
             
             <!-- recipe ingredients -->
             <h2>Recipe</h2>
-            <table>
+            <table class="recipe-border">
                 <tr>
-                    <td>
-            <p>Prep time:   Servings: 6</p>
-
-                <table>
+                    <td>                
+			<table class="recipe-border">
                     <tr> <!-- row 1 -->
                         <th colspan="2">Ingredients</th>
                     </tr>
@@ -138,6 +139,7 @@
 	    <td>
             <!-- instructions for the recipe -->    
             <h3> Directions</h3>
+            <p>Prep time:   Servings: 6</p>
                 <ol>
                     <li>Boil your potatoes on high until soft, then strain and set aside in a large bowl.</li>
                     <li>In a separate smaller bowl, combine your seasonings and flour.</li>
@@ -146,11 +148,10 @@
                     <li>Pan fry both sides until crispy.</li>
                     <li>Serve as a side with a meal of your choice, or as an appetizer. Enjoy!</li>
                 </ol>
+                <p> afternote</p>
                 </td>
 		</tr>
 		</table>
-                <p> afternote</p>
-            
             <h2>Additional Advice</h2>
             
             <h3>Tips</h3>

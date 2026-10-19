@@ -8,6 +8,9 @@
         body{
             background-color: Sienna;
         }
+	.recipe-border{
+	border: 2px Solid Olive;
+	}
         /* ---------------------- CONTAINER LAYOUT ----------------------*/
         /* defining layout (the grid) */
         .container {
@@ -37,7 +40,7 @@
 
         .container div.main {
             grid-area: main;
-            background-color: Honeydew;
+            background-color: Ivory;
             color: Olive;
         }
 
@@ -77,11 +80,9 @@
             
             <!-- recipe ingredients -->
             <h2>Recipe</h2>
-            <table>
+            <table class="recipe-border">
                 <tr>
                     <td>
-            <p>Prep time:   Servings: 2 - 3</p>
-
                 <table>
                     <tr> <!-- row 1 -->
                         <th colspan="2">Ingredients</th>
@@ -119,6 +120,7 @@
 	    <td>
             <!-- instructions for the recipe -->    
             <h3> Directions</h3>
+            <p>Prep time:   Servings: 2 - 3</p>
                 <ol>
 		    <li>Preheat your airfryer to 400F</li>
                     <li>Rinse and dry your broccoli thoroughly before separating into small chunks.</li>
@@ -127,12 +129,11 @@
                     <li>In the airfryer basket, spread the broccoli apart evenly, leaving room for space in between for air to circulate.</li>
                     <li>Let it cook in the airfryer for 7 minutes.</li>
                     <li>Serve as a side with a dish of choice. Enjoy!</li>
-                </ol>
+                </ol> 
                 </td>
 		</tr>
 		</table>
-                <p> afternote</p>
-            
+           
             <h3>Additional Advice</h3>
             
             <h3>Tips</h3>
