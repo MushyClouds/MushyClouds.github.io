@@ -1,0 +1,13 @@
+
+	body{
+		background-color:LemonChiffon;
+	}
+
+	header, footer{
+		background-color:Ivory;
+	}
+
+	footer{
+		color: SlateBlue;
+		font-size: 2em;
+	}
