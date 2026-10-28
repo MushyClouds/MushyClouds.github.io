@@ -1,13 +1,21 @@
+body{
+	background-color: SkyBlue;
+}
 
-	body{
-		background-color:LemonChiffon;
-	}
+.orange{
+	background-color: Orange;
+}
 
-	header, footer{
-		background-color:Ivory;
-	}
+.big{
+	font-size:3em;
+}
 
-	footer{
-		color: SlateBlue;
-		font-size: 2em;
-	}
+#tiny{
+	font-size:0.5em;
+}
+
+header{
+	border: 5px black solid;
+	margin: 20px;
+	padding: 10px;
+}
