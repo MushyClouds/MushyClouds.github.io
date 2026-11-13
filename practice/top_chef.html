@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
+  
+  
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, Comforta; max-width: 900px; margin: 0 auto; }
+    img { display: block; width: 100%; background: #ddd; }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; justify-self: right; color: Snow; }
+    h2 { font-size: 1.5rem; margin-bottom: 0.5rem; color: Snow;}
+    h3 { font-size: 1.2rem; margin-bottom: 0.5rem; color: Snow;}
+    p { color: #555; line-height: 1.6; margin-bottom: 0.5rem; color: Snow;}
+    button { padding: 0.5rem 1.5rem; border: none; border-radius: 5px; background: Snow; color: DeepPink; cursor: pointer; font-weight: bold;}
+    nav { display: flex; gap: 1rem; color: DeepPink; font-weight: bold;}
+    nav a { text-decoration: none; color: inherit; background-color: Snow; padding: 2px; }
+    /* Layout */
+    .c1 {
+      padding: 1rem;
+    }
+    .c2 {
+      display: grid;
+      grid:
+        'stuff bigpic' auto
+        / 2fr 3fr;
+      padding: 1rem;
+    }
+    .c3 {
+      grid-area: bigpic;
+      aspect-ratio: 4 / 3;
+    }
+    .c4 {
+      display: grid;
+      grid:
+        'title' 1fr
+        'paragraph' 4fr
+        'button' 1fr
+        / auto;
+      grid-area: stuff;
+      padding: 1rem;
+    }
+    .c5 {
+      grid-area: title;
+    }
+    .c6 {
+      grid-area: paragraph;
+    }
+    .c7 {
+      grid-area: button;
+    }
+    .c8 {
+      display: grid;
+      grid:
+        'left middle right' auto
+        / 1fr 1fr 1fr;
+      padding: 2rem;
+    }
+    .c9 {
+      grid-area: left;
+      padding: 1rem;
+    }
+    .c10 {
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c11 {
+      grid-area: middle;
+      padding: 1rem;
+    }
+    .c12 {
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c13 {
+      grid-area: right;
+      padding: 1rem;
+    }
+    .c14 {
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c15 {
+      padding: 0.5rem;
+    }
+    
+    body{
+        background-color: DeepPink
+    }
+    
+    footer{
+        background-color: Snow;
+        color: DeepPink;
+    }
+  </style>
+  
+  
+</head>
+<body>
+<header class="c1">
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Work</a>
+    <a href="#">Contact</a>
+  </nav>
+  <h1>Grampa's Glizzys</h1>
+</header>
+<main class="c2">
+  <img src="https://media.licdn.com/dms/image/v2/C4D12AQEnT8Az7tHSSA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1585685732771?e=2147483647&v=beta&t=0kzRJm3j-Z1swe3_EcglXjyBGZTBcpR1mx1vq0YCrJI" alt="" class="c3">
+  <div class="c4">
+    <h2 class="c5">Hot Dogs Galore!!</h2>
+    <p class="c6">Don't even question what it's made of, all you gotta know is its delicious and you should buy some!! Your gradparents will love you for it. </p>
+    <button class="c7">Click me!! &#129430;</button>
+  </div>
+</main>
+<section class="c8">
+  <div class="c9">
+    <img src="https://external-preview.redd.it/fell-off-the-wagon-v0-YXZ3dXluaHBsOThnMavJfDD0yzLabmSkZrrxnw7ouKdlQg06jSTGLyDNe6xr.png?width=640&crop=smart&format=pjpg&auto=webp&s=df734ee012dd3e38229e6a392f44f58f563cd000" alt="" class="c10">
+    <h3>Glizzy's on the Go!</h3>
+    <p>Your gramps got a drinking and driving problem? fix that by swapping his jack daniels for a hotdog!</p>
+  </div>
+  <div class="c11">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2xPO2P1H8oPaPf_YGwHisI9FtMQtWAng0eSLuaz8IoMDrhTO2lknAFRso&s=10g" alt="" class="c12">
+    <h3>toppings!! toppings!!</h3>
+    <p>Load it up!! anchovies, onions, its awesome!!</p>
+  </div>
+  <div class="c13">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStzX8TYjezCwPH8dfEDdQxoQvCUL6kp1t_I7YWQCXd98Wi_zzJTEexkkI&s=10" alt="" class="c14">
+    <h3>Dog-gone Good!</h3>
+    <p>just buy a hotdog for christsake why are you still reading</p>
+  </div>
+</section>
+<footer class="c15">
+  <h3 style="color: DeepPink;">About Us</h3>
+  <p style="color: DeepPink;">oh my goshhhh SCROLL BACK UP AND CLICK THE BIG BUTTON!!</p>
+</footer>
+  <script>
+  (function() {
+    var s = document.createElement("script");
+    s.src = "https://cdn.jsdelivr.net/gh/gracehoppercenter/validate@1.0.5/validate.js";
+    s.async = false;
+    document.head.appendChild(s);
+  })();
+  </script>
+</body>
+</html>
